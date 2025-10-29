@@ -1,0 +1,124 @@
+:root {
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.414214rem;
+  --font-size-h3: 1rem;
+  --font-size-small: 0.840896rem;
+  --line-height-primary: 1.681793;
+  --line-height-secondary: 1.189207;
+}
+
+*,
+::before,
+::after {
+  background-color: transparent;
+  border-width: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lch(3 3 270);
+  color: white;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: var(--line-height-primary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 2rem 1rem;
+}
+
+header {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  line-height: var(--line-height-secondary);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  line-height: var(--line-height-secondary);
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  color: lch(80 3 270);
+  font-size: var(--font-size-small);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  line-height: var(--line-height-secondary);
+  margin: 2rem 0 1rem;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+a:any-link {
+  color: lch(66 100 270);
+  text-decoration-line: none;
+  transition: color 300ms linear;
+}
+
+a:hover {
+  color: lch(56 100 270);
+}
+
+strong {
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+blockquote {
+  background-color: lch(13 3 270);
+  font-size: var(--font-size-small);
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.text-small {
+  font-size: var(--font-size-small);
+}
+
+footer {
+  font-size: var(--font-size-small);
+  margin-top: 1rem;
+  text-align: center;
+}
